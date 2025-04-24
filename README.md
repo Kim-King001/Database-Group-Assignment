@@ -1,17 +1,13 @@
-The Ecommerce database design consist of the following
-
-Customers/Users: Stores user information such as name, email, password (hashed), address, and registration date.
-
-Products: Contains product details like name, description, price, stock quantity, category, and supplier/vendor.
-
-Categories: Organizes products into logical groups.
-
-Orders: Records each purchase, linking to the customer, order date, total amount, and status.
-
-OrderItems: Represents individual products within an order, including quantity and subtotal.
-
-Payments: Tracks payment details for each order, including method, status, and amount.
-
-Shipping Addresses: Stores delivery information for orders.
-
-Product Reviews (optional): Allows users to rate and comment on products
+Explanation:
+•	Customer: Stores customer info.
+•	Brand: Stores brands.
+•	Product_Category: Supports hierarchical categories.
+•	Product: Core product info linked to brand and category.
+•	Product_Variation: SKU-specific variants with stock and optional override price.
+•	Attribute_Category & Attribute_Type: Define attribute groupings and types.
+•	Product_Attribute: Assigns attribute values to product variations.
+•	Size_Category & Size_Option: Define size groups and options.
+•	Colour: Color options with optional hex codes.
+•	Product_Image: Images linked to product or variation.
+•	Order: Customer orders.
+•	Order_Details: Items in each order, linking to product variations and quantity.
