@@ -1,17 +1,34 @@
-The Ecommerce database design consist of the following
+# 🛍️ E-Commerce Database Project
 
-Customers/Users: Stores user information such as name, email, password (hashed), address, and registration date.
+This project is a **relational database schema** for an E-Commerce platform. It includes all core entities like `products`, `categories`, `orders`, `customers`, and attributes for handling variations like size, colour, and stock levels.
 
-Products: Contains product details like name, description, price, stock quantity, category, and supplier/vendor.
+---
 
-Categories: Organizes products into logical groups.
+## 📁 Project Structure
 
-Orders: Records each purchase, linking to the customer, order date, total amount, and status.
+```bash
+ecommerce-database/
+│
+├── schemas/
+│   ├── 01_brand.sql
+│   ├── 02_product_category.sql
+│   ├── 03_product.sql
+│   ├── 04_product_item.sql
+│   ├── 05_product_image.sql
+│   ├── 06_colour.sql
+│   ├── 07_size_category.sql
+│   ├── 08_size_option.sql
+│   ├── 09_product_variation.sql
+│   ├── 10_attribute_category.sql
+│   ├── 11_attribute_type.sql
+│   ├── 12_product_attribute.sql
+│   ├── 13_customer.sql
+│   ├── 14_order.sql
+│
+├── erd/
+│   └── ecommerce-erd.png
+│
+└── README.md
 
-OrderItems: Represents individual products within an order, including quantity and subtotal.
-
-Payments: Tracks payment details for each order, including method, status, and amount.
-
-Shipping Addresses: Stores delivery information for orders.
 
 Product Reviews (optional): Allows users to rate and comment on products
