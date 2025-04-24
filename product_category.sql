@@ -1,5 +1,5 @@
 --  Product Category Table (self-referencing for hierarchy)
-CREATE TABLE Product_Category (
+CREATE TABLE product_category (
     product_category_id INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(100) NOT NULL,
     parent_category_id INT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE Product_Category (
 );
 
 -- Insert Product Categories (hierarchical)
-INSERT INTO Product_Category (category_name, parent_category_id) VALUES
+INSERT INTO product_category (category_name, parent_category_id) VALUES
 ('Clothing', NULL),
 ('Footwear', NULL),
 ('Electronics', NULL),
