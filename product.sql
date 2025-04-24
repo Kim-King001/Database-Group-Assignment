@@ -7,3 +7,9 @@ CREATE TABLE product (
     FOREIGN KEY (brand_id) REFERENCES brand(brand_id),
     FOREIGN KEY (category_id) REFERENCES product_category(category_id)
 );
+
+
+INSERT INTO product (product_name, brand_id, category_id, base_price) VALUES
+('Wireless Mouse', 1, 2, 19.99),
+('Bluetooth Headphones', 2, 3, 59.99),
+('Mechanical Keyboard', 1, 2, 89.99);
