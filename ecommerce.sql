@@ -62,4 +62,5 @@ VALUES
 INSERT INTO brand (brand_name)
 VALUES 
 ('Nike'),
+('Puma'),
 ('Adidas');
