@@ -9,3 +9,8 @@ CREATE TABLE product_attribute(
     FOREIGN KEY (attribute_category_id) REFERENCES attribute_category(attribute_category_id),
     FOREIGN KEY (attribute_type_id) REFERENCES attribute_type(attribute_type_id)
 );
+
+INSERT INTO product_attribute (product_id, attribute_category_id, attribute_type_id, attribute_name, attribute_value) VALUES
+(1, 1, 1, 'Connectivity', 'Wireless'),
+(2, 1, 1, 'Battery Life', '10 hours'),
+(3, 1, 1, 'Switch Type', 'Mechanical');
