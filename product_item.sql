@@ -7,4 +7,9 @@ CREATE TABLE IF NOT EXISTS product_item (
     created DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (product_id) REFERENCES product(product_id)
-)
+);
+
+INSERT INTO product_item (product_id, product_name, sku, stock_quantity, price, created, updated) VALUES
+(1, 'Wireless Mouse', 'MOUSE-WLS-BLK', 100, 19.99, NOW(), NOW()),
+(2, 'Bluetooth Headphones', 'HEAD-BT-BLK', 50, 59.99, NOW(), NOW()),
+(3, 'Mechanical Keyboard', 'KEY-MECH-RGB', 75, 89.99, NOW(), NOW());
